@@ -1,10 +1,8 @@
 :root {
   --color-scheme-1-background: var(--color-emerald-lightest);
-  --color-neutral-darkest: #030a06;
   --color-scheme-1-border: var(--opacity-neutral-darkest-15);
   --color-scheme-1-text: var(--color-neutral-darkest);
   --color-neutral-lighter: #d9dad9;
-  --color-white: #fff;
   --color-neutral-lightest: #f2f2f2;
   --color-neutral-light: #b3b5b4;
   --color-neutral: #818482;
@@ -48,6 +46,91 @@
   --color-scheme-3-foreground: var(--color-neutral-lightest);
   --color-error-red: #d64040;
 
+  /* refactored variables */
   --font-family: 'Fira Sans', sans-serif;
   --second-family: 'Comfortaa', sans-serif;
+
+  --color-neutral-darkest: #030a06;
+  --color-white: #fff;
+
+  /* buttons */
+  --button-primary-background: var(--color-neutral-darkest);
+  --button-primary-color: var(--color-white);
+
+  --button-secondary-color: var(--color-neutral-darkest);
+  --button-hover-background: rgba(3, 10, 6, 0.5);
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-scheme-1-text);
+  background-color: var(--color-scheme-1-background);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+[class^='button-'] {
+  line-height: 1.6;
+  display: inline-flex;
+  transition: opacity linear 0.2s;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.button-primary {
+  background-color: var(--button-primary-background);
+  border-color: var(--button-primary-background);
+  color: var(--button-primary-color);
+}
+
+.button-secondary {
+  color: var(--button-secondary-color);
+  border-color: currentColor;
+}
+
+[class^='button-']:hover,
+[class^='button-']:focus-within {
+  opacity: 0.5;
+}
+
+[class^='button-']:active {
+  opacity: 0.6;
+}
+
+[class^='button-']:disabled {
+  opacity: 0.2;
+}
+
+.section-p {
+  line-height: 1.6;
+}
+
+/* tablet and desktop */
+@media screen and (min-width: 768px) {
+  .section-p {
+    font-size: 18px;
+  }
+}
+
+/* mobile and tablet */
+@media screen and (max-width: 1439px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+/* desktop only */
+@media screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 48px;
+  }
 }
