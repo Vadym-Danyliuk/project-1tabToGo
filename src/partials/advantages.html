@@ -1,16 +1,129 @@
-<p>
-    ### Advantages <br>
-
-- Текст "Переваги" - підзаголовок. <br>
-- Текст "Чому обрати нас?" є заголовком секції. <br>
-- Текст з перевагами виробів - опис секції. <br>
-- У секції знаходиться перелік переваг виробів компанії, який необхідно
-  реалізувати як список елементів за допомогою `<ul>`. <br>
-- Кожен елемент списку є карткою, що містить у собі: <br>
-  - зображення - повинно бути контентним. <br>
-  - заголовок - повинен мати рівень нижчий, ніж заголовок секції. <br>
-  - текст з описом. <br>
-
----
-
-</p>
+<section class="advantages-section">
+  <div class="container advantages-section-container">
+    <p class="advantages-subtitle">Переваги</p>
+    <h2 class="advantages-title">Чому обрати нас?</h2>
+    <p class="advantages-discription">
+      Наші сумки виготовлені з екологічно чистих матеріалів, що забезпечують
+      стійкість і довговічність. Обираючи EcoTote, ви підтримуєте екологічну
+      відповідальність.
+    </p>
+    <ul class="advantages-list">
+      <div class="advantages-container-wrapper">
+      <li class="advantages-list-item">
+        
+          <picture>
+            <source
+              srcset="
+                ../img/advantages/eco-desk.jpg    1x,
+                ../img/advantages/eco-desk@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+            <source
+              srcset="
+                ../img/advantages/eco-tab.jpg    1x,
+                ../img/advantages/eco-tab@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ../img/advantages/eco-mob.jpg    1x,
+                ../img/advantages/eco-mob@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              class="advantages-img"
+              src="../img/advantages/eco-mob.jpg"
+              alt="materials"
+            />
+          </picture>
+          
+          <h3 class="advantages-text-title">Стійкість та екологічність</h3>
+          <p class="advantages-text">
+            Виготовлені з органічної бавовни та переробленого пластику.
+          </p>
+        
+        
+      </li>
+      <li class="advantages-list-item">
+       
+          <picture>
+            <source
+              srcset="
+                ../img/advantages/manufacture-desk.jpg    1x,
+                ../img/advantages/manufacture-desk@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+            <source
+              srcset="
+                ../img/advantages/manufacture-tab.jpg    1x,
+                ../img/advantages/manufacture-tab@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ../img/advantages/manufacture-mob.jpg    1x,
+                ../img/advantages/manufacture-mob@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              class="advantages-img"
+              src="../img/advantages/manufacture-mob.jpg"
+              alt="manufacture"
+            />
+          </picture>
+          
+          <h3 class="advantages-text-title">Міцність і довговічність</h3>
+          <p class="advantages-text">
+            Наші сумки мають посилені шви для тривалого використання.
+          </p>
+        
+        </div>
+      </li>
+      <li class="advantages-list-item">
+        <div class="advantages-container-wrapper-last-img">
+          <picture>
+            <source
+              srcset="
+                ../img/advantages/design-desk.jpg   1x,
+                ../img/advantages/design-desk@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+            <source
+              srcset="
+                ../img/advantages/design-tab.jpg    1x,
+                ../img/advantages/design-tab@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ../img/advantages/design-mob.jpg    1x,
+                ../img/advantages/design-mob@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              class="advantages-img"
+              src="../img/advantages/design-mob.jpg"
+              alt="bags"
+            />
+          </picture>
+          
+          <h3 class="advantages-text-title">Стильний та сучасний дизайн</h3>
+          <p class="advantages-text">
+            Мінімалістичні моделі в обмежених серіях для кожного стилю.
+          </p>
+        
+        </div>
+      
+      </li>
+    </ul>
+  </div>
+</section>

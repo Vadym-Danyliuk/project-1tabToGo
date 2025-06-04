@@ -1,0 +1,118 @@
+.advantages-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #ebf8ed;
+}
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.advantages-subtitle {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-neutral-darkest);
+  margin-bottom: 12px;
+}
+.advantages-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #030a06;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .advantages-title {
+    font-size: 48px;
+  }
+}
+.advantages-discription {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-discription {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advantages-discription {
+    margin-bottom: 80px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advantages-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+}
+.advantages-img {
+  border-radius: 32px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-img {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-container-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-container-wrapper-last-img {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.advantages-list-item {
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .advantages-list-item {
+    max-width: 421px;
+  }
+}
+
+.advantages-text-title {
+  margin-bottom: 4px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #030a06;
+}
+@media screen and (min-width: 1440px) {
+  .advantages-text-title {
+    font-size: 32px;
+  }
+}
+.advantages-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06;
+}
