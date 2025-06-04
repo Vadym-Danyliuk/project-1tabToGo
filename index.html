@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/project-1tabToGo/assets/index-DjhO-9vb.css">
+    <link rel="stylesheet" crossorigin href="/project-1tabToGo/assets/index-B5pDPHaE.css">
   </head>
   <body>
     <p>
@@ -666,11 +666,63 @@
   </div>
 </section>
 
-      <section>
-  <div>
-    <form action="">
-      <input type="text" />
-    </form>
+      <section class="support-section">
+  <div class="container support-container">
+    <div class="support-mail-box">
+      <h2 class="mail-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="mail-subtitle">Ми тут, щоб допомогти!</p>
+      <form action="">
+        <div class="support-mail-item">
+          <label class="support-mail-lable" for="user-name">Ім'я</label>
+          <input
+            class="support-mail-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Іван"
+          ></input>
+        </div>
+        <div class="support-mail-item">
+          <label class="support-mail-lable" for="user-email">Електронна пошта</label>
+          <input
+            class="support-mail-input"
+            name="user-email"
+            id="user-email"
+            placeholder="hello@ecotote.com"
+          ></input>
+        </div>
+        <div class="support-mail-item">
+          <label class="support-mail-lable" for="user-message">Повідомлення</label>
+          <textarea
+            class="support-mail-message"
+            name="user-message"
+            id="user-message"
+            placeholder="Іван"
+          ></textarea>
+        </div>
+        <button class="button-primary">Надіслати</button>
+      </form>
+    </div>
+    <div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          type="image/jpeg"
+          srcset="../img/support-img/img-mail-desktop.jpg 1x, /project-1tabToGo/assets/img-mail-desktop@2-CT80B6HE.jpg 2x"
+        />    
+
+        <source
+          media="(min-width: 768px)"
+          type="image/jpeg"
+          srcset="/project-1tabToGo/assets/img-mail-tablet-CJeHi68w.jpg 1x, /project-1tabToGo/assets/img-mail-tablet@2-C38NzW-o.jpg 2x"
+        />
+
+        <source
+          type="image/jpeg"
+          srcset="/project-1tabToGo/assets/img-mail-mobile-BbgxZ0qB.jpg 1x, /project-1tabToGo/assets/img-mail-mobile@2-Di5yCwfe.jpg 2x"
+        />
+        <img class="hero-image" src="/project-1tabToGo/assets/img-mail-mobile-BbgxZ0qB.jpg" alt="Hero image" />
+      </picture>
+    </div>
   </div>
 </section>
 
