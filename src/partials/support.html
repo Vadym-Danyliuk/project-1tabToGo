@@ -1,1 +1,59 @@
-<p>### Support</p>
+<section class="support-section">
+  <div class="container support-container">
+    <div class="support-mail-box">
+      <h2 class="mail-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="mail-subtitle">Ми тут, щоб допомогти!</p>
+      <form action="">
+        <div class="support-mail-item">
+          <label class="support-mail-lable" for="user-name">Ім'я</label>
+          <input
+            class="support-mail-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Іван"
+          ></input>
+        </div>
+        <div class="support-mail-item">
+          <label class="support-mail-lable" for="user-email">Електронна пошта</label>
+          <input
+            class="support-mail-input"
+            name="user-email"
+            id="user-email"
+            placeholder="hello@ecotote.com"
+          ></input>
+        </div>
+        <div class="support-mail-item">
+          <label class="support-mail-lable" for="user-message">Повідомлення</label>
+          <textarea
+            class="support-mail-message"
+            name="user-message"
+            id="user-message"
+            placeholder="Іван"
+          ></textarea>
+        </div>
+        <button class="button-primary">Надіслати</button>
+      </form>
+    </div>
+    <div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          type="image/jpeg"
+          srcset="/img/support-img/img-mail-desktop.jpg 1x, /img/support-img/img-mail-desktop@2.jpg 2x"
+        />    
+
+        <source
+          media="(min-width: 768px)"
+          type="image/jpeg"
+          srcset="/img/support-img/img-mail-tablet.jpg 1x, /img/support-img/img-mail-tablet@2.jpg 2x"
+        />
+
+        <source
+          type="image/jpeg"
+          srcset="/img/support-img/img-mail-mobile.jpg 1x, /img/support-img/img-mail-mobile@2.jpg 2x"
+        />
+        <img class="hero-image" src="/img/support-img/img-mail-mobile.jpg" alt="Picture for contact form" />
+      </picture>
+    </div>
+  </div>
+</section>
