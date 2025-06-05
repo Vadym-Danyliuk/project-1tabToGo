@@ -1,17 +1,126 @@
 .section {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    margin-top: 64px;
-    margin-bottom: 62px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .section {
-    margin-bottom: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.gallery-title {
+  font-size: 36px;
+  text-align: center;
+  color: var(--color-scheme-3-text);
+  margin-bottom: 16px;
+}
+
+.gallery-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-scheme-3-text);
+  margin-bottom: 32px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    gap: 24px;
+    max-height: 1200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery-list {
+    max-height: 1000px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list li:nth-child(1) {
+    order: 4;
+  }
+  .gallery-list li:nth-child(2) {
+    order: 3;
+  }
+  .gallery-list li:nth-child(3) {
+    order: 2;
+  }
+  .gallery-list li:nth-child(4) {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery-list li:nth-child(1) {
+    order: 2;
+  }
+  .gallery-list li:nth-child(3) {
+    order: 4;
+  }
+}
+
+.gallery-list-item-image {
+  border-radius: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list-item-image-4 {
+    width: 340px;
+    height: 340px;
+  }
+
+  .gallery-list-item-image-3 {
+    width: 340px;
+    height: 700px;
+  }
+
+  .gallery-list-item-image-2 {
+    width: 340px;
+    height: 700px;
+  }
+
+  .gallery-list-item-image-1 {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery-list-item-image-4 {
+    width: 421px;
+    height: 421px;
+  }
+
+  .gallery-list-item-image-3 {
+    width: 421px;
+    height: 865px;
+  }
+
+  .gallery-list-item-image-2 {
+    width: 421px;
+    height: 865px;
+  }
+
+  .gallery-list-item-image-1 {
+    width: 421px;
+    height: 421px;
   }
 }
