@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -79,7 +80,7 @@
     padding-bottom: 94px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(/img/about/desktop/desktop-min.jpg);
-    max-width: 1440px;
+    width: 1440px;
   }
 
   .about-subtitle {
