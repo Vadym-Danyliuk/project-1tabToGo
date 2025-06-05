@@ -21,12 +21,14 @@
 
 .assortment-list-item {
     flex-basis: calc((100% - 280px) /8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .assortment-text-wrapper {
-    padding-top: 16px;
     text-align: center;
-    padding-bottom: 8px;
 }
 
 .assortment-list-img {
@@ -45,6 +47,7 @@
     font-size: 14px;
     line-height: 1.6;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .assortment-price {
@@ -52,7 +55,6 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 16px;
 }
 
 .assortment-btn {
@@ -67,4 +69,52 @@
     color: #030a06;
     cursor: pointer;
     background-color: transparent;
+}
+
+/* .assortment-btn:hover,
+.assortment-btn:focus {
+} */
+
+@media screen and (min-width: 768px) {
+    .assortment {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .assortment-list-img {
+        height: 408px;
+        width: 340px;
+    }
+
+    .assortment-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .assortment-list-item {
+        flex-basis: calc((100% - 24px) /2);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .assortment-list-img {
+        height: 372px;
+        width: 310px;
+    }
+
+    .assortment-list{
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .assortment-list-item {
+        flex-basis: calc((100% - 72px) / 4);
+
+    }
+
+    .assortment-title {
+        font-size: 48px;
+    }
 }
