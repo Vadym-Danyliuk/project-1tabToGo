@@ -121,16 +121,16 @@ h2 {
 
 [class^='button-']:hover,
 [class^='button-']:focus-within {
-  opacity: 0.5;
-}
-
-[class^='button-']:active {
   opacity: 0.6;
 }
 
-[class^='button-']:disabled {
-  opacity: 0.2;
+[class^='button-']:active {
+  opacity: 0.5;
 }
+
+/* [class^='button-']:disabled {
+  opacity: 0.2;
+} */
 
 .section-p {
   line-height: 1.6;
