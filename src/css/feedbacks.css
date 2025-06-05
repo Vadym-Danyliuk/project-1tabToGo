@@ -45,6 +45,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.6;
+    margin-top: auto;
   }
 }
 
@@ -86,9 +87,5 @@
 
   .feedbacks-list-item {
     width: calc((100% - 72px) / 4);
-  }
-
-  .last {
-    margin-top: auto;
   }
 }
