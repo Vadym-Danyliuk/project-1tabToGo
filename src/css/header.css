@@ -2,33 +2,6 @@
   margin: 0 auto;
 }
 
-/* mobile only */
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-/* tablet only */
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-/* desktop only */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-}
-
 /* NAVBAR */
 .page-navbar {
   margin: auto;
@@ -53,8 +26,17 @@
   display: none;
 }
 .navbar-burger-btn {
-  width: 32px;
-  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #75d281;
+  border: none;
+}
+.navbar-burger-btn-icon:hover {
+  fill-opacity: 0.5;
+}
+.navbar-burger-btn-icon:focus {
+  fill-opacity: 0.6;
 }
 @media screen and (min-width: 768px) {
   .page-navbar {
@@ -113,23 +95,28 @@
   .navbar-burger-btn {
     display: none;
   }
-}
-.page-menu-link:hover {
-  opacity: 0.5;
-}
-.page-menu-link:focus {
-  opacity: 0.6;
-}
-.tel-link:hover {
-  opacity: 0.5;
-}
 
-.tel-link:focus {
-  opacity: 0.6;
-}
-.address-link:hover {
-  opacity: 0.5;
-}
-.address-link:focus {
-  opacity: 0.6;
+  .page-menu-link:hover {
+    opacity: 0.5;
+  }
+  .page-menu-link:focus {
+    opacity: 0.6;
+  }
+  .tel-link:hover {
+    opacity: 0.5;
+  }
+
+  .tel-link:focus {
+    opacity: 0.6;
+  }
+  .address-link,
+  .tel-link {
+    font-style: normal;
+  }
+  .address-link:hover {
+    opacity: 0.5;
+  }
+  .address-link:focus {
+    opacity: 0.6;
+  }
 }
