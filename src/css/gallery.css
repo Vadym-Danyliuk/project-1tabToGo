@@ -23,6 +23,12 @@
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 1440px) {
+  .gallery-title {
+    font-size: 48px;
+  }
+}
+
 .gallery-subtitle {
   font-weight: 400;
   font-size: 18px;
