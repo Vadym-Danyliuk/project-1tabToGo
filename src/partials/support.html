@@ -1,11 +1,9 @@
-<!-- SUPPPORT -->
 <section class="support-section" id="support">
   <div class="container support-container">
     <div class="support-mail-box">
       <h2 class="mail-title">Залишились питання? Зв'яжіться з нами!</h2>
       <p class="mail-subtitle">Ми тут, щоб допомогти!</p>
-      <!-- FORM -->
-      <form>
+      <form action="">
         <div class="support-mail-item">
           <label class="support-mail-lable" for="user-name">Ім'я</label>
           <input
@@ -14,10 +12,13 @@
             name="user-name"
             id="user-name"
             placeholder="Іван"
-            pattern="^[a-zA-Z\s.]{5,64}$"
+            pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ\s.]{2,64}$"
+            title="Ім'я має містити від 2 до 64 символів"
             required
           />
+          <div class="error-text">Error text</div>
         </div>
+
         <div class="support-mail-item">
           <label class="support-mail-lable" for="user-email"
             >Електронна пошта</label
@@ -28,28 +29,33 @@
             name="user-email"
             id="user-email"
             placeholder="hello@ecotote.com"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Введіть коректну email адресу"
             required
           />
+          <div class="error-text">Error text</div>
         </div>
+
         <div class="support-mail-item">
           <label class="support-mail-lable" for="user-message"
             >Повідомлення</label
           >
+
           <textarea
             class="support-mail-message"
             name="user-message"
             id="user-message"
             placeholder="Введіть своє повідомлення..."
             maxlength="500"
+            minlength="10"
+            title="Повідомлення має містити від 10 до 500 символів"
             required
           ></textarea>
-          <div class="error-text" id="message-error"></div>
+          <div class="error-text">Error text</div>
         </div>
+
         <button class="button-primary" type="submit">Надіслати</button>
       </form>
     </div>
-    <!-- IMAGE -->
     <div>
       <picture>
         <source
@@ -76,7 +82,7 @@
           "
         />
         <img
-          class="support-image"
+          class="hero-image"
           src="/img/support-img/img-mail-mobile.jpg"
           alt="Picture for contact form"
         />
@@ -84,3 +90,4 @@
     </div>
   </div>
 </section>
+<!-- . -->

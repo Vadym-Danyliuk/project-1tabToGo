@@ -1,3 +1,4 @@
+/*  SUPPORT */
 .support-section {
   padding: 40px 0;
   background-color: var(--color-scheme-1-background);
@@ -9,7 +10,6 @@
   gap: 32px;
 }
 
-/*  FORM  */
 .support-mail-box {
   flex: 1;
   max-width: 100%;
@@ -33,14 +33,16 @@
   margin: 0 0 24px 0;
   text-align: center;
 }
+
+/* FORM */
 .support-mail-item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   position: relative;
 }
 
 .support-mail-lable {
   display: block;
-  font-size: 14px;
+
   font-weight: 400;
   color: var(--color-neutral-darkest);
   margin-bottom: 8px;
@@ -49,12 +51,13 @@
 .support-mail-input,
 .support-mail-message {
   width: 100%;
-  padding: 14px;
+  padding: 8px 12px;
   border: 1px solid var(--color-scheme-1-border);
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: var(--opacity-neutral-darkest-5);
   font-family: var(--font-family);
-  font-size: 16px;
+
+  line-height: 160%;
   color: var(--color-neutral-darkest);
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -66,20 +69,31 @@
 }
 
 .support-mail-message {
-  min-height: 100px;
-  resize: vertical;
+  min-height: 180px;
+  resize: none;
+}
+
+.error-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  color: var(--color-error-red);
+  margin-top: 4px;
+  height: 16px;
+  line-height: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .support-mail-input:focus,
 .support-mail-message:focus {
   outline: none;
-  border-color: var(--color-emerald);
   box-shadow: 0 0 0 2px rgba(58, 192, 76, 0.2);
-}
-
-.support-mail-input:valid:not(:placeholder-shown),
-.support-mail-message:valid:not(:placeholder-shown) {
-  border-color: var(--color-emerald);
 }
 
 .support-mail-input:invalid:not(:placeholder-shown),
@@ -87,30 +101,22 @@
   border-color: var(--color-error-red);
 }
 
-.error-text {
-  font-size: 12px;
-  color: var(--color-error-red);
-  margin-top: 4px;
-  min-height: 16px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .support-mail-input:invalid:not(:placeholder-shown) + .error-text,
 .support-mail-message:invalid:not(:placeholder-shown) + .error-text {
   opacity: 1;
+}
+
+.support-mail-input:valid:not(:placeholder-shown) + .error-text,
+.support-mail-message:valid:not(:placeholder-shown) + .error-text {
+  opacity: 0;
 }
 
 .support-section .button-primary {
   width: 100%;
   max-width: none;
   justify-content: center;
-  margin-top: 8px;
 }
 
-.support-image {
-  margin: 0 auto;
-}
 .support-container > div:last-child {
   flex: 1;
   display: flex;
@@ -130,7 +136,7 @@
   object-fit: cover;
 }
 
-/* TABLET  */
+/* ===== TABLET STYLES ===== */
 @media screen and (min-width: 768px) {
   .support-section {
     padding: 80px 0;
@@ -138,7 +144,7 @@
 
   .support-container {
     align-items: center;
-    gap: 32px;
+    gap: 24px;
   }
 
   .mail-title {
@@ -151,20 +157,6 @@
     text-align: left;
   }
 
-  .support-mail-input,
-  .support-mail-message {
-    padding: 18px;
-  }
-
-  .support-mail-message {
-    min-height: 120px;
-  }
-
-  .support-section .button-primary {
-    width: auto;
-    max-width: 200px;
-  }
-
   .support-mail-box {
     order: 0;
   }
@@ -173,11 +165,11 @@
     order: 0;
   }
   .support-section .button-primary {
-    width: 250px;
+    width: 249px;
   }
 }
 
-/* DESKTOP */
+/* ===== DESKTOP STYLES ===== */
 @media screen and (min-width: 1440px) {
   .support-section {
     padding: 100px 0;
@@ -209,28 +201,27 @@
 
   .support-mail-input,
   .support-mail-message {
-    padding: 20px;
     font-size: 16px;
-  }
-
-  .support-mail-message {
-    min-height: 140px;
   }
 
   .error-text {
     font-size: 14px;
+    height: 18px;
+    line-height: 18px;
   }
   .support-section .button-primary {
     width: 198px;
   }
 }
 
-.support-mail-input:hover:not(:focus),
-.support-mail-message:hover:not(:focus) {
-  border-color: var(--color-emerald-light);
+.support-mail-input:focus:invalid + .error-text,
+.support-mail-message:focus:invalid + .error-text {
+  opacity: 0;
 }
 
-.support-section .button-primary:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.support-mail-input:not(:focus):invalid:not(:placeholder-shown) + .error-text,
+.support-mail-message:not(:focus):invalid:not(:placeholder-shown)
+  + .error-text {
+  opacity: 1;
 }
+/*  */
