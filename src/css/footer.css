@@ -19,6 +19,12 @@
     align-items: center;
     gap: 32px;
   }
+  .footer-nav-link:hover {
+    color: var(--color-emerald-darkest);
+  }
+  .footer-nav-link:focus {
+    color: var(--color-neutral-darkest);
+  }
   .footer-socials {
     margin-bottom: 48px;
   }
@@ -37,6 +43,12 @@
   }
   .footer-address-link {
     font-style: normal;
+  }
+  .footer-address-link:hover {
+    color: var(--color-emerald-darkest);
+  }
+  .footer-address-link:focus {
+    color: var(--color-neutral-darkest);
   }
   .copyrights {
     text-align: center;
