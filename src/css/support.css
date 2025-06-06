@@ -1,0 +1,236 @@
+.support-section {
+  padding: 40px 0;
+  background-color: var(--color-scheme-1-background);
+}
+
+.support-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/*  FORM  */
+.support-mail-box {
+  flex: 1;
+  max-width: 100%;
+  order: 1;
+}
+
+.mail-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-neutral-darkest);
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.mail-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-neutral-darkest);
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+.support-mail-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.support-mail-lable {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-neutral-darkest);
+  margin-bottom: 8px;
+}
+
+.support-mail-input,
+.support-mail-message {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--color-scheme-1-border);
+  border-radius: 8px;
+  background-color: var(--opacity-neutral-darkest-5);
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--color-neutral-darkest);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-mail-input::placeholder,
+.support-mail-message::placeholder {
+  color: var(--color-neutral);
+}
+
+.support-mail-message {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.support-mail-input:focus,
+.support-mail-message:focus {
+  outline: none;
+  border-color: var(--color-emerald);
+  box-shadow: 0 0 0 2px rgba(58, 192, 76, 0.2);
+}
+
+.support-mail-input:valid:not(:placeholder-shown),
+.support-mail-message:valid:not(:placeholder-shown) {
+  border-color: var(--color-emerald);
+}
+
+.support-mail-input:invalid:not(:placeholder-shown),
+.support-mail-message:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error-red);
+}
+
+.error-text {
+  font-size: 12px;
+  color: var(--color-error-red);
+  margin-top: 4px;
+  min-height: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.support-mail-input:invalid:not(:placeholder-shown) + .error-text,
+.support-mail-message:invalid:not(:placeholder-shown) + .error-text {
+  opacity: 1;
+}
+
+.support-section .button-primary {
+  width: 100%;
+  max-width: none;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.support-image {
+  margin: 0 auto;
+}
+.support-container > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  order: 2;
+}
+
+.support-container picture {
+  max-width: 100%;
+  height: auto;
+}
+
+.support-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* TABLET  */
+@media screen and (min-width: 768px) {
+  .support-section {
+    padding: 80px 0;
+  }
+
+  .support-container {
+    align-items: center;
+    gap: 32px;
+  }
+
+  .mail-title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .mail-subtitle {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .support-mail-input,
+  .support-mail-message {
+    padding: 18px;
+  }
+
+  .support-mail-message {
+    min-height: 120px;
+  }
+
+  .support-section .button-primary {
+    width: auto;
+    max-width: 200px;
+  }
+
+  .support-mail-box {
+    order: 0;
+  }
+
+  .support-container > div:last-child {
+    order: 0;
+  }
+  .support-section .button-primary {
+    width: 250px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .support-section {
+    padding: 100px 0;
+  }
+
+  .support-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .mail-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .mail-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .support-mail-item {
+    margin-bottom: 32px;
+  }
+
+  .support-mail-lable {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .support-mail-input,
+  .support-mail-message {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .support-mail-message {
+    min-height: 140px;
+  }
+
+  .error-text {
+    font-size: 14px;
+  }
+  .support-section .button-primary {
+    width: 198px;
+  }
+}
+
+.support-mail-input:hover:not(:focus),
+.support-mail-message:hover:not(:focus) {
+  border-color: var(--color-emerald-light);
+}
+
+.support-section .button-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
