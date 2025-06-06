@@ -29,6 +29,8 @@
 
 .assortment-text-wrapper {
     text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .assortment-list-img {
@@ -62,18 +64,22 @@
     text-align: center;
     padding: 10px 20px;
     width: 100%;
-    border: 1px solid #030a06;
+    border: 1px solid var(--color-neutral-darkest);
     border-radius: 6px;
     font-weight: 400;
     font-size: 16px;
-    color: #030a06;
+    color: var(--color-neutral-darkest);
     cursor: pointer;
     background-color: transparent;
+    outline: transparent;
+    /* transition: background-color linear 0.2s, color linear 0.2s; */
 }
 
-/* .assortment-btn:hover,
+.assortment-btn:hover,
 .assortment-btn:focus {
-} */
+    background-color: var(--color-neutral-darkest);
+    color: var(--button-primary-color);
+}
 
 @media screen and (min-width: 768px) {
     .assortment {
