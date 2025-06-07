@@ -4,7 +4,6 @@
 }
 .container {
   width: 100vw;
-
 }
 
 /* NAVBAR */
@@ -48,10 +47,7 @@
     max-width: 768px;
   }
 }
-.page-navbar .container {
-  padding-left: 32px;
-  padding-right: 32px;
-}
+
 @media screen and (min-width: 768px) {
   .navbar-menu {
     max-width: 768px;
