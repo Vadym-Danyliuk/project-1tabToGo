@@ -1,11 +1,16 @@
+.navbar-wrapper {
+  width: 100vw;
+  background-color: #75d281;
+}
 .container {
-  margin: 0 auto;
+  width: 100vw;
+  background-color: #75d281;
 }
 
 /* NAVBAR */
 .page-navbar {
   margin: auto;
-  max-width: 320px;
+  width: 100%;
 }
 .page-navbar .container {
   padding: 16px;
