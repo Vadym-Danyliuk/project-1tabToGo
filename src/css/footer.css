@@ -32,6 +32,7 @@
   }
   .footer-nav-link:hover {
     color: var(--color-emerald-darkest);
+    opacity: 0.6;
   }
   .footer-nav-link:focus {
     color: var(--color-neutral-darkest);
@@ -47,14 +48,15 @@
     line-height: 0;
   }
   .footer-socials-svg {
-    fill: var(--color-scheme-2-text);
+    color: var(--color-scheme-2-text);
     transition: opacity 0.3s ease;
   }
   .footer-socials-svg:hover {
-    fill: var(--color-emerald-darkest);
+    color: var(--color-emerald-darkest);
+    opacity: 0.6;
   }
   .footer-socials-svg:focus {
-    fill: var(--color-neutral-darkest);
+    color: var(--color-neutral-darkest);
     opacity: 0.5;
   }
   .footer-address {
@@ -76,6 +78,7 @@
   }
   .footer-address-link:hover {
     color: var(--color-emerald-darkest);
+    opacity: 0.6;
   }
   .footer-address-link:focus {
     color: var(--color-neutral-darkest);
