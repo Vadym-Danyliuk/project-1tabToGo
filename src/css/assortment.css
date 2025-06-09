@@ -60,7 +60,6 @@
 }
 
 .assortment-btn {
-    display: block;
     text-align: center;
     padding: 10px 20px;
     width: 100%;
@@ -72,13 +71,13 @@
     cursor: pointer;
     background-color: transparent;
     outline: transparent;
-    /* transition: background-color linear 0.2s, color linear 0.2s; */
+    transition: color linear 0.2s, border linear 0.2s;
 }
 
 .assortment-btn:hover,
 .assortment-btn:focus {
-    background-color: var(--color-neutral-darkest);
-    color: var(--button-primary-color);
+    color: rgba(17, 57, 22, 0.6);
+    border: 1px solid rgba(17, 57, 22, 0.6);
 }
 
 @media screen and (min-width: 768px) {
