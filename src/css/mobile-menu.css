@@ -23,7 +23,7 @@
   top: 0%;
   right: 0%;
   width: 100%;
-  min-height: 668px;
+  min-height: 100vh;
   padding: 0;
   background-color: #75d281;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -88,10 +88,7 @@
   fill-opacity: 0.6;
 }
 @media screen and (min-width: 768px) {
-  .open-navbar-menu {
-    min-height: 672px;
-    width: 768px;
-  }
+ 
   .open-navbar-header {
     padding: 14px 32px;
   }
