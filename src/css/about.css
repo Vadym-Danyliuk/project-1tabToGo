@@ -52,12 +52,12 @@
       url(/img/about/tab/tablet.jpg);
   }
 
-  @media screen and (min-resolution: 192dpi) {
+  /* @media screen and (min-resolution: 192dpi) {
     .about {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(/img/about/tab/tablet@2x.jpg);
     }
-  }
+  } */
 
   .about-title {
     margin-bottom: 16px;
@@ -72,6 +72,13 @@
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/about/tab/tablet@2x.jpg);
+  }
+}
+
 /* Desktop */
 
 @media screen and (min-width: 1440px) {
@@ -83,12 +90,12 @@
     width: 1440px;
   }
 
-  @media screen and (min-resolution: 192dpi) {
+  /* @media screen and (min-resolution: 192dpi) {
     .about {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(/img/about/desktop/desktop@2x.jpg);
     }
-  }
+  } */
 
   .about-subtitle {
     font-size: 56px;
@@ -98,5 +105,12 @@
 
   .about-text {
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/about/desktop/desktop@2x.jpg);
   }
 }
